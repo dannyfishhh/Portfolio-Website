@@ -1,0 +1,226 @@
+html {
+    font-size: clamp(16px, 2vw, 24px); /* min, fluid, max */
+}
+
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+    font-weight: 300;
+    color: #1e1f26;
+    text-align: center;
+}
+
+.merriweather {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    font-weight: 50;
+    color: #1e1f26;
+}
+
+.testimonial {
+    font-style: italic;
+}
+
+.home, .portfolio {
+    background-color: #f9f8f7;
+}
+
+.hero, .testimonials {
+    background-color: #b393dd;
+}
+
+.page-container {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 85%;
+    height: auto; 
+}
+
+.header {
+   margin: 0 0.5rem 0 0.5rem;
+}
+
+.header .underline-image {
+    position: relative;
+    width: 25rem;
+    height: 2rem;
+    bottom: 1rem;
+}
+
+.sub-header {
+    margin: 0 1rem 0 1rem;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.icons a {
+    text-decoration: none;
+}
+
+.icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 15rem;         /* Set a fixed width */
+    height: 15rem;        /* Set the same value for height */
+    border-radius: 50%;   /* Makes it a circle */
+    object-fit: cover;    /* Ensures the image covers the area without distortion */
+    overflow: hidden;
+    margin: 2rem 0 2rem 0;;
+}
+
+.hero-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.hero-header .underline-image {
+    position: relative;
+    max-width: 14rem; 
+    height: 2rem;
+    bottom: 1rem;
+}
+
+ul {
+    padding-left: 2rem;
+    max-width: 90%;
+    margin: 0 auto 2rem auto;;
+}
+
+li {
+    list-style:disc;
+    margin: 0.5rem 0;
+    text-align: left;
+}
+
+.portfolio-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.portfolio-header .underline-image {
+    position: relative;
+    max-width: 16rem;
+    height: 2rem;
+    bottom: 1rem;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60vh;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    flex: 1;
+    padding: 2rem 0;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    border: 1px solid #1e1f26;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 1rem;
+    padding: 2rem 0;
+}
+
+.testimonial {
+    font-style: italic;
+    max-width: 40rem;
+    margin: 0.5rem;
+    flex: 1;
+}
+
+@media screen and (min-width: 700px) {
+
+    .testimonials {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem 1rem;
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+
+    .portfolio-items {
+        flex-direction: row;
+}
+
+
+}
+
+@media screen and (min-width: 800px) {
+
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 75vh;
+    }
+
+    .hero-image {
+        width: 30rem;         /* Set a fixed width */
+        height: 30rem;        /* Set the same value for height */
+        margin: 0;
+        border-radius: 0;
+    }
+
+}
