@@ -162,7 +162,11 @@ li {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+ol {
+    font-size: 0.7rem;
 }
 
 .portfolio-item img {
@@ -203,7 +207,18 @@ li {
 
     .portfolio-items {
         flex-direction: row;
-}
+    }
+
+    .portfolio-item-name {
+        align-self: flex-start;
+        margin-left: 4rem;
+    }
+
+    .portfolio-item-list {
+        align-self: flex-start;
+        font-size: 0.7rem;
+        margin-left: 6rem;
+    }
 
 
 }
